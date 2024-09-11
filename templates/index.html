@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+  <link rel="shortcut icon" href="../static/images/favicon.png" type="">
+
+  <title> Welcome </title>
+
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="../static/css/bootstrap.css" />
+
+  <!-- fonts style -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+
+  <!--owl slider stylesheet -->
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+
+  <!-- font awesome style -->
+  <link href="../static/css/font-awesome.min.css" rel="stylesheet" />
+
+  <!-- Custom styles for this template -->
+  <link href="../static/css/style.css" rel="stylesheet" />
+  <!-- responsive style -->
+  <link href="../static/css/responsive.css" rel="stylesheet" />
+
+</head>
+
+<body>
+
+  <div class="hero_area">
+    <div class="hero_bg_box">
+      <div class="bg_img_box">
+         <img src="../static/images/hero-bg.png" alt="">
+      </div>
+    </div>
+
+    <!-- header section strats -->
+    <header class="header_section">
+      <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg custom_nav-container ">
+          <a class="navbar-brand" href="index.html">
+            <span>
+              Antonino Favian Gonzales
+            </span>
+          <article class="flashes">
+            {% with messages = get_flashed_messages() %}
+              {% if messages %}
+                <ul>
+                  {% for message in messages %}
+                    <li>{{message}}</li>
+                  {% endfor %}
+                </ul>
+              {% endif %}
+            {% endwith %}
+          </article>
+         </a>
+
+           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class=""> </span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav  ">
+              <li class="nav-item active">
+                <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html"> About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="service.html">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="why.html">Why Me</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- end header section -->
+    <!-- slider section -->
+    <section class="slider_section ">
+      <div id="customCarousel1" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="container ">
+              <div class="row">
+                <div class="col-md-6 ">
+                  <div class="detail-box">
+                    <h1>
+                      Hardware <br>
+                      Engineer
+                    </h1>
+                    <p>
+                      At HHC-medical, creating medical prototypes using 3D printers and electronics. We achieve wireless electroporation in animal experiments.
+                    </p>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="img-box">
+                    <img src="../static/images/coil_machine.png" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item ">
+            <div class="container ">
+              <div class="row">
+                <div class="col-md-6 ">
+                  <div class="detail-box">
+                    <h1>
+                      Electronic <br>
+                      Engineer
+                    </h1>
+                    <p>
+                      At Aarhus University, designing and implementing a deep brain stimulator for medical applications.
+                    </p>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="img-box">
+                    <img src="../static/images/euro_not_crop.png" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="container ">
+              <div class="row">
+                <div class="col-md-6 ">
+                  <div class="detail-box">
+                    <h1>
+                      University <br>
+                      Project
+                    </h1>
+                    <p>
+                      At the department of robotics of Aarhus university, using Arduino uno to control actuators and using Ros enviroment to control drones. C and python languages where used to code the controllers.
+                    </p>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="img-box">
+                    <body>
+                      <video width="448" height="336" controls>
+                        <source src="../static/images/final_video_short_1080p.mp4" type="video/mp4">
+                        <source src="movie.ogg" type="video/ogg">
+                      </video>
+                    </body>
+                    <!-- <img src="../static/images/slider-img.png" alt=""> -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <ol class="carousel-indicators">
+          <li data-target="#customCarousel1" data-slide-to="0" class="active"></li>
+          <li data-target="#customCarousel1" data-slide-to="1"></li>
+          <li data-target="#customCarousel1" data-slide-to="2"></li>
+        </ol>
+      </div>
+
+    </section>
+    <!-- end slider section -->
+  </div>
+
+
+  <!-- service section -->
+
+  <section class="service_section layout_padding">
+    <div class="service_container">
+      <div class="container ">
+        <div class="heading_container heading_center">
+          <h2>
+            My work<span> ethics</span>
+          </h2>
+          <p>
+            I like to use my creativity to build new gadgets as well as optimizing work proccessess, which can result in a better world.
+          </p>
+        </div>
+        <div class="row">
+          <div class="col-md-4 ">
+            <div class="box ">
+              <div class="img-box">
+                <img src="../static/images/s1.png" alt="">
+              </div>
+              <div class="detail-box">
+                <h5>
+                  Tool Management
+                </h5>
+                <p>
+                  Familiarizing yourself with the tools found in an electronics workshop makes a difference when prototyping.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 ">
+            <div class="box ">
+              <div class="img-box">
+                <img src="../static/images/s2.png" alt="">
+              </div>
+              <div class="detail-box">
+                <h5>
+                  growth mindset
+                </h5>
+                <p>
+                  I apply a learning/growth mindset in order to quickly learn and use my new skills in practice
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 ">
+            <div class="box ">
+              <div class="img-box">
+                <img src="../static/images/s3.png" alt="">
+              </div>
+              <div class="detail-box">
+                <h5>
+                  Innovation
+                </h5>
+                <p>
+                  Innovation is key to finding smart solutions to problems, which require both time and monetary investment.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- end service section -->
+
+
+  <!-- about section -->
+
+  <section class="about_section layout_padding">
+    <div class="container">
+      <div class="heading_container heading_center">
+        <h2>
+          About <span>Me</span>
+        </h2>
+        <p>
+          I am a young Bolivian living in Denmark, currently looking for a job opening in Electrical Engineering or Hardware Engineering.
+        </p>
+        <p> 
+          I am building this website to sharpen my programming skills and to work on fun projects.
+        </p>
+      </div>
+      <div class="row">
+        <div class="col-md-6 ">
+          <div class="img-box">
+            <img src="../static/images/about-img.png" alt="">
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="detail-box">
+            <h3>
+              Create your ideas
+            </h3>
+            <p>
+              Are you passionate about innovation and technology?
+               Let’s team up! I’m looking for like-minded people 
+               who want to collaborate on exciting projects in 3D printing, prototyping, and electronics design.
+            </p>
+            <p>
+              Whether you need help printing 3D models for your prototypes or designing custom electronics
+               for PCBs, I can assist you in turning your vision into reality. Together, we can create smart
+                solutions to complex problems. If you’re driven by creativity and enjoy working on fun, 
+                hands-on projects, let’s connect and make something amazing!
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- end about section -->
+
+  <!-- why section -->
+
+  <section class="why_section layout_padding">
+    <div class="container">
+      <div class="heading_container heading_center">
+        <h2>
+          Why Choose <span>Me</span>
+        </h2>
+      </div>
+      <div class="why_container">
+        <div class="box">
+          <div class="img-box">
+            <img src="../static/images/w1.png" alt="">
+          </div>
+          <div class="detail-box">
+            <h5>
+              Expert Lab enviroment
+            </h5>
+            <p>
+              With extensive experience in electronics and 3D printing, I offer expert solutions for your projects.
+              From designing custom PCBs to prototyping with precision 3D models, I provide the expertise needed 
+              to turn your concepts into successful realities.
+            </p>
+          </div>
+        </div>
+        <div class="box">
+          <div class="img-box">
+            <img src="../static/images/w2.png" alt="">
+          </div>
+          <div class="detail-box">
+            <h5>
+              MSc in Electrical Engineering
+            </h5>
+            <p>
+              I hold an MSc in Electrical Engineering from Aarhus University, specializing in analogue and digital 
+              electronics for regulation and wearable devices. My expertise includes designing energy harvesting 
+              circuits, optimizing low-noise and low-power systems, and analyzing power management in wearable 
+              technology.
+            </p>
+          </div>
+        </div>
+        <div class="box">
+          <div class="img-box">
+            <img src="../static/images/w3.png" alt="">
+          </div>
+          <div class="detail-box">
+            <h5>
+              Revenue
+            </h5>
+            <p>
+              At my previous company, I played a key role in securing a 10 million DKK investment by designing and
+               building applicators used in crucial experiments. These experiments demonstrated the startup’s 
+               potential, showcasing real results that impressed investors and contributed directly to the 
+               company’s success.
+            </p>
+          </div>
+        </div>
+        <div class="box">
+          <div class="img-box">
+            <img src="../static/images/w4.png" alt="">
+          </div>
+          <div class="detail-box">
+            <h5>
+              Cross-Disciplinary Project Success
+            </h5>
+            <p>
+              I have collaborated with professionals from diverse fields, including medical and scientific 
+              backgrounds, to execute complex projects. By integrating knowledge across disciplines, I’ve 
+              contributed to innovative solutions, ensuring successful outcomes in challenging and multifaceted 
+              environments.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- end why section -->
+
+  <!-- info section -->
+
+  <section class="info_section layout_padding2">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 col-lg-3 info_col">
+          <div class="info_contact">
+            <h4>
+              Address
+            </h4>
+            <div class="contact_link_box">
+              <a href="">
+                <i class="fa fa-map-marker" aria-hidden="true"></i>
+                <span>
+                  Copenhagen, Denmark
+                </span>
+              </a>
+              <a href="">
+                <i class="fa fa-phone" aria-hidden="true"></i>
+                <span>
+                  Call +45 91474812
+                </span>
+              </a>
+              <a href="">
+                <i class="fa fa-envelope" aria-hidden="true"></i>
+                <span>
+                  anfago48@gmail.com
+                </span>
+              </a>
+            </div>
+          </div>
+          <div class="info_social">
+            <a href="">
+              <i class="fa fa-facebook" aria-hidden="true"></i>
+            </a>
+            <a href="">
+              <i class="fa fa-twitter" aria-hidden="true"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/antonino-favian-g-560517158/">
+              <i class="fa fa-linkedin" aria-hidden="true"></i>
+            </a>
+            <a href="">
+              <i class="fa fa-instagram" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 info_col">
+          <div class="info_detail">
+            <h4>
+              Info
+            </h4>
+            <p>
+              This website was build using the themplates find in Free Html Templates 
+              in order to practice my programming skills.
+            </p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-2 mx-auto info_col">
+          <div class="info_link_box">
+            <h4>
+              Links
+            </h4>
+            <div class="info_links">
+              <a class="active" href="index.html">
+                Home
+              </a>
+              <a class="" href="about.html">
+                About
+              </a>
+              <a class="" href="service.html">
+                Services
+              </a>
+              <a class="" href="why.html">
+                Why Me
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- end info section -->
+
+  <!-- footer section -->
+  <section class="footer_section">
+    <div class="container">
+      <p>
+        &copy; <span id="displayYear"></span> All Rights Reserved By
+        <a href="https://html.design/">Free Html Templates</a>
+      </p>
+    </div>
+  </section>
+  <!-- footer section -->
+
+  <!-- jQery -->
+  <script type="text/javascript" src="../static/js/jquery-3.4.1.min.js"></script>
+  <!-- popper js -->
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+  </script>
+  <!-- bootstrap js -->
+  <script type="text/javascript" src="../static/js/bootstrap.js"></script>
+  <!-- owl slider -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js">
+  </script>
+  <!-- custom js -->
+  <script type="text/javascript" src="../static/js/custom.js"></script>
+  <!-- Google Map -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap">
+  </script>
+  <!-- End Google Map -->
+
+</body>
+
+</html>
